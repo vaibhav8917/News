@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+}
+
+body{
+    font-family: "popins", sans-serif;
+    color: var(--primary-text-color);
+    background-color: #ffe5d9;
+}
+p{
+    font-family: "Roboto";
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+    color: #0077b6;
+}
+.container{
+    max-width: 1180px; 
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 0 5px #bbd0e2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.nav-bar{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+
+.company-logo img{
+    width: 120px;
+    height: 60px;
+}
+
+.active{
+    color: red;
+}
+
+.nav-links ul{
+    gap: 16px;
+}
+
+.searchbar{
+    height: 32px;
+    gap: 8px;
+}
+.search-input{
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border: 1px solid #afc3d5;
+    border-radius: 5px;
+    font-family: "Robot", sans-serif;
+}
+.search-btn{
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    padding: 8px 24px;
+    cursor: pointer;
+    font-family: "Robot", sans-serif;
+}
+.search-btn:hover{
+    background-color: var(--accent-color-dark);
+}
+
+main{
+    margin-top: 80px;
+    padding-block: 20px;
+}
+.card-container{
+    justify-content: space-between;
+    row-gap: 20px;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.card{
+    width: 360px;
+    height: 400px;
+    outline: 1px solid #b8c0ff;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #d4ecff;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.card::-webkit-scrollbar{
+    display: none;
+}
+
+.card:hover{
+    border: none;
+    box-shadow: 1px 1px 8px #b8c0ff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+.news-source{
+    margin-block: 12px; 
+}
